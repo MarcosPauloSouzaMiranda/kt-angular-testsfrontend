@@ -1,0 +1,11 @@
+<div data-testid="modalLoading" class="modal-wrapper" *ngIf="loadingService.isOpen">
+  <div class="card">
+    <div data-testid="modalTitle" class="card-title">
+      {{ loadingService.title }}
+    </div>
+    <div data-testid="modalMessage" class="card-body">
+      {{ loadingService.message }}
+    </div>
+    <button data-testid="btnClose" (click)="close()">Close</button>
+  </div>
+</div>
