@@ -9,6 +9,8 @@ describe('LoadingComponent', () => {
   let component: LoadingComponent;
   let fixture: ComponentFixture<LoadingComponent>;
   let service: LoadingService;
+  const TITLE: string = 'Test';
+  const MESSAGE: string = 'Message';
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -22,7 +24,7 @@ describe('LoadingComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(LoadingComponent);
     component = fixture.componentInstance;
-    service.open('Test', 'Message');
+    service.open(TITLE, MESSAGE);
     fixture.detectChanges();
   });
 
@@ -49,13 +51,13 @@ describe('LoadingComponent', () => {
   it('Should must check if the name passed in the opening of the popup is being loaded on the screen', () => {
     const modal = fixture.debugElement.query(By.css('[data-testid="modalLoading"]'));
     const title = modal.query(By.css('[data-testid="modalTitle"]'));
-    expect(title.nativeElement.textContent.trim()).toBe('Test');
+    expect(TITLE).toBe(title.nativeElement.textContent.trim());
   });
 
   it('Should must check if the message being sent on opening is loaded on the screen', () => {
     const modal = fixture.debugElement.query(By.css('[data-testid="modalLoading"]'));
     const title = modal.query(By.css('[data-testid="modalMessage"]'));
-    expect(title.nativeElement.textContent.trim()).toBe('Message');
+    expect(MESSAGE).toBe(title.nativeElement.textContent.trim());
   });
 
   it('Should close the modal when clicking on the button', () => {
