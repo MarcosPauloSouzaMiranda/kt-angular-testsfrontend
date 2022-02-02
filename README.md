@@ -8,4 +8,4 @@ Exemplificar funções básicas de testes com angular para components do front-e
 - Rode os tests executando o comando 'ng test'.
 
 # Link para apresentação
-https://dtidigital-my.sharepoint.com/:p:/g/personal/marcos_miranda_dtidigital_com_br/EdIRIyroXVZFo3Iklh9viUgBuZxS_4N94VFXU7VRSXgZcw?e=GKQILm
+https://dtidigital-my.sharepoint.com/:p:/g/personal/marcos_miranda_dtidigital_com_br/EbGFtH5HxxpDlk2JT5qpsIQBtRekc4WOCsGWX6IlVqhzFA?e=MUReIj
